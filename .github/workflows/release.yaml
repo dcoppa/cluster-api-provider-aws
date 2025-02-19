@@ -35,4 +35,5 @@ jobs:
           echo "Release tag is: $RELEASE_TAG"
           make release
         env:
+          PREVIOUS_VERSION: "v2.7.1"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
